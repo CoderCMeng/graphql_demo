@@ -1,3 +1,4 @@
 type Query {
     userById(id: ID!): User
+    allUsers: [User!]!
 }

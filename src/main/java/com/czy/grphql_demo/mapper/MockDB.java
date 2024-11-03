@@ -30,12 +30,17 @@ public class MockDB {
   }
 
   public static User queryUserById(String userId) {
-    log.info("执行queryUserById：userId = {}", userId);
+    log.info("MockDB 执行queryUserById：userId = {}", userId);
     return USERS.stream().filter(u -> u.getId().equals(userId)).findFirst().orElse(null);
   }
 
+  public static List<User> queryAllUsers() {
+    log.info("MockDB 执行queryAllUsers");
+    return USERS;
+  }
+
   public static Address queryAddressByUserId(String userId) {
-    log.info("执行queryAddressByUserId：userId = {}", userId);
+    log.info("MockDB 执行queryAddressByUserId：userId = {}", userId);
     return ADDRESSES.stream().filter(a -> a.getUserId().equals(userId)).findFirst().orElse(null);
   }
 }

@@ -1,4 +1,4 @@
-package com.czy.grphql_demo.resolver.query;
+package com.czy.grphql_demo.graphql.resolver.query;
 
 import com.czy.grphql_demo.mapper.UserMapper;
 import com.czy.grphql_demo.models.User;

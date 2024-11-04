@@ -2,10 +2,7 @@ package com.czy.grphql_demo.config.grapgql;
 
 import com.czy.grphql_demo.models.Address;
 import com.czy.grphql_demo.models.User;
-import graphql.Scalars;
 import graphql.kickstart.tools.SchemaParserDictionary;
-import graphql.scalars.ExtendedScalars;
-import graphql.schema.GraphQLScalarType;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
